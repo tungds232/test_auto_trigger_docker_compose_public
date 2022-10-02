@@ -1,0 +1,1 @@
+# test_auto_trigger_docker_compose_public
