@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  apache:
+    image: httpd:latest
+    volumes:
+      - data:/usr/local/apache2/htdocs
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+volumes:
+  data:
+    driver: local
+       
