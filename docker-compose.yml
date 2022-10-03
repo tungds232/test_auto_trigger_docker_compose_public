@@ -8,6 +8,8 @@ services:
       placement:
         constraints:
           - node.role == manager
+      labels:
+        test: 'hello'
 volumes:
   data:
     driver: local
